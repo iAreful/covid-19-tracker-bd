@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    /> -->
+    <title>করোনা আপডেট তথ্য | আরিফুল</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/app.js"></script>
+
+    <style>
+      body {
+        font-family: "Hind Siliguri";
+      }
+    </style>
+
+    <script>
+
+    </script>
+  </head>
+
+  <body class="text-gray-800">
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-start justify-between px-2 py-3"
+    >
+      <div
+        class="w-11/12 px-4 mx-auto flex flex-wrap items-start justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class=""
+            href="index.html"
+            ><h1 class="text-sm font-bold text-2xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">করোনা আপডেট তথ্য</h1></a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://areful.com" target="_blank" rel="noopener"
+                >
+                <img src="./src/img/arf.png" width="25" class="" alt="">
+                <span class="lg:hidden inline-block ml-2">Areful</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://twitter.com/ArefulCode" target="_blank" rel="noopener"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Tweeter</span></a
+              >
+            </li>
+
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://github.com/iAreful" target="_blank" rel="noopener"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Gitub</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="relative pt-16 pb-20 flex content-center items-center justify-center"
+        
+      >
+        <div
+          class="absolute top-0 w-full h-60 bg-center bg-cover"
+          id="bg-cover-h"
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-60 absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1 class="text-white font-semibold text-5xl">
+                  কোভিড-১৯ এর সর্বশেষ তথ্য
+                </h1>
+                <p class="mt-4 text-lg text-gray-300">
+                  প্রিয় লিঙ্ক বুকমার্ক করতে (Ctrl+D) করুন
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+    <section class="pt-4">
+      <div class="flex flex-row gap-4 justify-center items-center">
+      <img src="./src/img/bd.svg" alt="" width="65" class="p-4 rounded-xl">
+      <h1 class="text-center  text-3xl" id="country1" style="text-transform: uppercase;"></h1>
+      <img src="./src/img/bd.svg" alt="" width="65" class="p-4 rounded-xl">
+    </div>
+      <h2 class="text-center font-bold text-2xl mb-6 animate-pulse"  id="today"></h2>
+      <div
+        class="p-4 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        style="
+          grid-gap: 50px;
+          grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        "
+      >
+        <div class="w-full rounded-lg bg-blue-500" id="fix">
+          <div class="p-4">
+            <div
+            class="text-white p-3 m-0 text-center bg-transparent border-none"
+          >
+            <i class="fas fa-lungs-virus text-3xl border px-2 py-2 border-white w-14 rounded-full"></i>
+          </div>
+
+            <h6 class="text-xl text-white font-semibold text-center text-4xl mb-4">মোট করোনা টেস্ট</h6>
+            <p class="mb-2 center text-white text-center bg-blue-400 text-2xl rounded-xl pt-2 pb-2" id="today_test" style="font-family: Hind Siliguri"></p>
+            <p class="center text-white text-center bg-blue-800 text-2xl rounded-xl pt-2 pb-2" id="total_test"></p>
+          </div>
+        </div>
+        <div class="w-full rounded-lg bg-yellow-500">
+          <div class="p-4">
+            <div
+            class="text-white p-3 m-0 text-center bg-transparent border-none"
+          >
+            <i class="fas fa-lungs-virus text-3xl border px-2 py-2 border-white w-14 rounded-full"></i>
+          </div>
+            <h6 class="text-xl text-white font-semibold text-center text-4xl mb-4">করোনা নতুন শনাক্ত</h6>
+            <p class="mb-2 center text-white text-center bg-yellow-600 text-2xl rounded-xl pt-2 pb-2" id="infact__3"></p>
+            <p class="center text-white text-center bg-yellow-700 text-2xl rounded-xl pt-2 pb-2" id="infact__3t"></p>
+            </p>
+          </div>
+        </div>
+        <div class="w-full rounded-lg bg-green-500">
+          <div class="p-4">
+            <div
+            class="text-white p-3 m-0 text-center bg-transparent border-none"
+          >
+            <i class="fas fa-lungs-virus text-3xl border px-2 py-2 border-white w-14 rounded-full"></i>
+          </div>
+            <h6 class="text-xl text-white font-semibold text-center text-4xl mb-4">সুস্থ</h6>
+            <p class="mb-2 center text-white text-center bg-green-600 text-2xl rounded-xl pt-2 pb-2" id="today_healthy"></p>
+            <p class="center text-white text-center bg-green-800 text-2xl rounded-xl pt-2 pb-2" id="all_healthy"></p>
+            </p>
+          </div>
+        </div>
+        <div class="w-full rounded-lg bg-red-400">
+          <div class="p-4">
+            <div
+            class="text-white p-3 m-0 text-center bg-transparent border-none"
+          >
+          <i class="fas fa-lungs-virus text-3xl border px-2 py-2 border-white w-14 rounded-full"></i>
+          </div>
+            <h6 class="text-xl text-white font-semibold text-center text-4xl mb-4">মৃত্যু</h6>
+            <p class="mb-2 center text-white text-center bg-red-600 text-2xl rounded-xl pt-2 pb-2" id="death_today"></p>
+            <p class="center text-white text-center bg-red-800 text-2xl rounded-xl pt-2 pb-2" id="death_total"></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="items-center justify-center relative bg-gray-300 pt-8 pb-6 mt-6">
+
+      <div class=" mx-10 px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-12/12 px-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+            <div class="w-full sm:w-5/12">
+              <h4 class="text-3xl font-semibold">করোনা ডাটাবেজ প্রজেক্ট</h4>
+              <h5 class="text-lg mt-0 mb-2 text-gray-700">
+                ভার্সনঃ বেটা-1 <br> ইমেইলঃ arefulnyc@gmail.com
+              </h5>
+              <div class="mt-6 flex flex-row gap-2">
+                <!-- twitter link -->
+                <a href="https://twitter.com/ArefulCode" target="_blank" rel="noopener"><button
+                  class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none flex flex-row"
+                  type="button"
+                >
+                  <i class="flex fab fa-twitter text-xl"></i></button
+                ></a>
+  
+                <!-- arf link -->
+                <a href="https://areful.com" target="_blank" rel="noopener">
+                  <button
+                    class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-2"
+                    type="button"
+                  >
+                    <img src="./src/img/arf.png" width="" class="" alt="">
+                  </button>
+                </a>             
+                 <!-- github link -->
+                <a href="https://github.com/iAreful" target="_blank" rel="noopener">
+                  <button
+                    class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none flex flex-row"
+                    type="button"
+                  >
+                    <i class="flex fab fa-github text-xl"></i>
+                  </button>
+                </a>
+              </div>
+           </div>
+           <div class="w-full sm:w-5/12">
+            <div class="">
+              <img src="" alt=""/>
+              <h3 class="font-bold text-xl">Govt update</h3>
+               <div class="flex flex-col sm:flex-row gap-8 items-center justify-center">
+              <a href="https://corona.gov.bd/" target="_blank" rel="noopener"> <button type="button" class="h-20 flex flex-col items-center justify-center hover:border"> 
+                <img src="./src/img/bdg.png" alt="" class="w-10">
+                <p class="text-xl text-blue-500  font-bold ">corona.gov.bd</p>
+              </button>
+            </a> 
+
+            <a href="https://shohay.health/" target="_blank" rel="noopener" class="">
+              <button type="button" class="h-20 px-4 flex flex-col items-center justify-center   rounded-xl "> 
+                  <img src="./src/img/shohay.svg" alt="" class="w-16 mb-2 sm:mb-6">
+                <p class="text-xl text-blue-500 font-bold ">স্বাস্থ্য তথ্য</p>
+              </button>
+               </a> 
+
+                <a href="http://www.mohfw.gov.bd/index.php?option=com_content&view=article&id=260%3A2014-06-29-10-23-48&catid=38%3Abcs-health&Itemid=&lang=en" target="_blank" rel="noopener">
+              <button type="button" class=" h-20  flex flex-col items-center justify-center"> <img src="./src/img/bdg.png" alt="" class="w-10">
+                <p class="text-xl text-blue-500 font-bold ">Ministry of Health</p>
+              </button>
+               </a>
+               </a> 
+              </div>
+
+              <h3 class="font-bold text-xl mt-0 sm:mt-16">জরুরী ফোন</h3>
+               <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              
+              <a href="tel:333"> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col items-center justify-center"> <p>জাতীয় কল সেন্টার</p>
+                <p>৩৩৩-১</p>
+              </button>
+            </a> 
+
+            <a href="tel:333">
+              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col items-center justify-center"> <p>স্বাস্থ্য বাতায়ন</p>
+                <p>১০৬৫৫</p> 
+              </button>
+               </a> 
+
+               <a href="tel:333">
+              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col items-center justify-center"><p>আইইডিসিআর</p>
+                <p>০৯৬৬৬৭৭৭২২২</p>
+              </button>
+               </a> 
+
+               <a href="tel:333">
+              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col items-center justify-center"> <p>০৯৬৬৬৮৮৮৮৮৮</p>
+                <p>মা টেলিহেলথ</p>
+              </button>
+               </a> 
+              </div>
+            </div>
+           </div>
+          </div>
+
+          </div>
+
+        </div>
+        <hr class="my-6 w-full  border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              <p class="text-xl">কপিরাইট ©2022 আরিফুল ইসলাম.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+  
+</html>
