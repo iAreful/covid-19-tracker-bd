@@ -1,5 +1,13 @@
 # Covid-19 BD Update ontime report - project
 
 
-Screenshot:
+Screenshot's:
+## beta-3
+![Screenshot 2022-06-24](https://user-images.githubusercontent.com/15269933/175483102-08175d3d-f6dd-46d7-8411-95a75dca1e91.png)
+
+## on mobile:
+![Screenshot 2022-06-24](https://user-images.githubusercontent.com/15269933/175483179-541102a3-c6cc-429d-9a47-c05450507a80.png)
+
+
+## beta-1
 ![Screenshot 2022-06-17](https://user-images.githubusercontent.com/15269933/175473812-a818155a-9120-446f-999f-3ae4d25c79b8.png)
