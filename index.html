@@ -114,17 +114,17 @@
         >
           <span
             id="blackOverlay"
-            class="w-full h-60 absolute opacity-75 bg-black"
+            class="w-full h-72 sm:h-60 absolute opacity-75 bg-black"
           ></span>
         </div>
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
+                <h1 class="text-white font-semibold text-5xl pt-10 sm:pt-0">
                   কোভিড-১৯ এর সর্বশেষ তথ্য
                 </h1>
-                <p class="mt-4 text-lg text-gray-300">
+                <p class="mt-4 text-lg text-gray-300 cursor-pointer " onClick="return rudr_favorite(this);">
                   প্রিয় লিঙ্ক বুকমার্ক করতে (Ctrl+D) করুন
                 </p>
               </div>
@@ -208,14 +208,14 @@
 
       <div class=" mx-10 px-4">
         <div class="flex flex-wrap">
-          <div class="w-full lg:w-12/12 px-4">
+          <div class="w-full lg:w-12/12 px-0 sm:px-4">
             <div class="flex flex-col sm:flex-row justify-between items-center">
-            <div class="w-full sm:w-5/12">
+            <div class="w-full sm:w-5/12 text-center sm:text-left">
               <h4 class="text-3xl font-semibold">করোনা ডাটাবেজ প্রজেক্ট</h4>
               <h5 class="text-lg mt-0 mb-2 text-gray-700">
-                ভার্সনঃ বেটা-1 <br> ইমেইলঃ arefulnyc@gmail.com
+                ভার্সনঃ বেটা-3 <br> ইমেইলঃ arefulnyc@gmail.com
               </h5>
-              <div class="mt-6 flex flex-row gap-2">
+              <div class="mt-6 flex flex-row gap-2 sm:items-start items-center   justify-center sm:justify-start ">
                 <!-- twitter link -->
                 <a href="https://twitter.com/ArefulCode" target="_blank" rel="noopener"><button
                   class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none flex flex-row"
@@ -244,58 +244,70 @@
                 </a>
               </div>
            </div>
-           <div class="w-full sm:w-5/12">
-            <div class="">
-              <img src="" alt=""/>
-              <h3 class="font-bold text-xl">Govt update</h3>
-               <div class="flex flex-col sm:flex-row gap-8 items-center justify-center">
-              <a href="https://corona.gov.bd/" target="_blank" rel="noopener"> <button type="button" class="h-20 flex flex-col items-center justify-center hover:border"> 
+
+           <!-- usefull Links -->
+           <div class="w-full sm:w-5/12 mt-10">
+            <div class="flex flex-row sm:flex-col sm:gap-0 gap-10 ">
+              <div class="sm:w-11/12 w-4/12">
+              <h3 class="sm:font-bold text-lg sm:text-xl  mt-6 sm:mt-0">Govt update</h3>
+
+               <div class=" flex flex-col sm:flex-row gap-2 items-center justify-center">
+              <a href="https://corona.gov.bd/" target="_blank" rel="noopener"> <button type="button" class="h-20 flex flex-col items-center justify-center mb-4 sm:mb-0"> 
                 <img src="./src/img/bdg.png" alt="" class="w-10">
-                <p class="text-xl text-blue-500  font-bold ">corona.gov.bd</p>
+                <p class="text-lg sm:text-xl text-blue-500 font-bold ">corona.gov.bd</p>
               </button>
             </a> 
 
             <a href="https://shohay.health/" target="_blank" rel="noopener" class="">
-              <button type="button" class="h-20 px-4 flex flex-col items-center justify-center   rounded-xl "> 
+              <button type="button" class="h-20 px-4 flex flex-col items-center justify-center rounded-xl  mb-4 sm:mb-0"> 
                   <img src="./src/img/shohay.svg" alt="" class="w-16 mb-2 sm:mb-6">
-                <p class="text-xl text-blue-500 font-bold ">স্বাস্থ্য তথ্য</p>
+                <p class="text-lg sm:text-xl text-blue-500 font-bold ">স্বাস্থ্য তথ্য</p>
               </button>
                </a> 
 
                 <a href="http://www.mohfw.gov.bd/index.php?option=com_content&view=article&id=260%3A2014-06-29-10-23-48&catid=38%3Abcs-health&Itemid=&lang=en" target="_blank" rel="noopener">
-              <button type="button" class=" h-20  flex flex-col items-center justify-center"> <img src="./src/img/bdg.png" alt="" class="w-10">
-                <p class="text-xl text-blue-500 font-bold ">Ministry of Health</p>
+              <button type="button" class=" h-20  flex flex-col items-center justify-center  mb-4 sm:mb-0"> <img src="./src/img/bdg.png" alt="" class="w-10">
+                <p class="text-lg sm:text-xl text-blue-500 font-bold ">Ministry of Health</p>
               </button>
                </a>
                </a> 
               </div>
+              </div>
 
-              <h3 class="font-bold text-xl mt-0 sm:mt-16">জরুরী ফোন</h3>
-               <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              <div class="sm:w-11/12 w-8/12">
+              <h3 class="sm:font-bold  text-lg sm:text-xl mt-0 mt-7 sm:mt-4 mb-1 sm:mb-0">জরুরী ফোন</h3>
+               <div class=" flex flex-col sm:flex-row gap-4 sm:items-center items-start justify-center">
               
-              <a href="tel:333"> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col items-center justify-center"> <p>জাতীয় কল সেন্টার</p>
+              <a href="tel:333"> <button type="button" class=" block h-[3rem] sm:h-[5rem]  text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-0 sm:mr-2 mb-0  sm:mb-2 flex flex-col items-center justify-center"> <p>জাতীয় কল সেন্টার</p>
                 <p>৩৩৩-১</p>
               </button>
             </a> 
 
-            <a href="tel:333">
-              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col items-center justify-center"> <p>স্বাস্থ্য বাতায়ন</p>
-                <p>১০৬৫৫</p> 
+            <a href="tel:16263">
+              <button type="button" class=" block h-[3rem] sm:h-[5rem] text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-0 sm:mr-2 mb-0  sm:mb-2 flex flex-col items-center justify-center"> <p>স্বাস্থ্য বাতায়ন</p>
+                <p>১৬২৬৩</p> 
               </button>
                </a> 
 
-               <a href="tel:333">
-              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col items-center justify-center"><p>আইইডিসিআর</p>
+               <a href="tel:10655">
+              <button type="button" class=" block h-[3rem] sm:h-[5rem] text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-0 sm:mr-2 mb-0  sm:mb-2 flex flex-col items-center justify-center"><p>আইইডিসিআর</p>
+                <p>১০৬৫৫</p>
+              </button>
+               </a> 
+
+               <a href="tel:09666777222">
+              <button type="button" class=" block h-[3rem] sm:h-[5rem] text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-0 sm:mr-2 mb-0  sm:mb-2 flex flex-col items-center justify-center"><p>কোভিড-১৯ টেলিহেলথ</p>
                 <p>০৯৬৬৬৭৭৭২২২</p>
               </button>
                </a> 
 
-               <a href="tel:333">
-              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex flex-col items-center justify-center"> <p>০৯৬৬৬৮৮৮৮৮৮</p>
+               <a href="tel:09666888888">
+              <button type="button" class=" block h-[3rem] sm:h-[5rem] text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-0 sm:mr-2 mb-0  sm:mb-2 flex flex-col items-center justify-center"> <p>০৯৬৬৬৮৮৮৮৮৮</p>
                 <p>মা টেলিহেলথ</p>
               </button>
                </a> 
               </div>
+            </div>
             </div>
            </div>
           </div>
@@ -309,7 +321,7 @@
         >
           <div class="w-full md:w-4/12 px-4 mx-auto text-center">
             <div class="text-sm text-gray-600 font-semibold py-1">
-              <p class="text-xl">কপিরাইট ©2022 আরিফুল ইসলাম.</p>
+              <p class="text-2xl">কপিরাইট ©2022 আরিফুল ইসলাম.</p>
             </div>
           </div>
         </div>
@@ -317,6 +329,34 @@
     </footer>
   </body>
   <script>
+    function rudr_favorite(a) {
+	pageTitle=document.title;
+	pageURL=document.location;
+	try {
+		// Internet Explorer solution
+		eval("window.external.AddFa-vorite(pageURL, pageTitle)".replace(/-/g,''));
+	}
+	catch (e) {
+		try {
+			// Mozilla Firefox solution
+			window.sidebar.addPanel(pageTitle, pageURL, "");
+		}
+		catch (e) {
+			// Opera solution
+			if (typeof(opera)=="object") {
+				a.rel="sidebar";
+				a.title=pageTitle;
+				a.url=pageURL;
+				return true;
+			} else {
+				// The rest browsers (i.e Chrome, Safari)
+				alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctrl') + '+D to bookmark this page.');
+			}
+		}
+	}
+	return false;
+}
+
     function toggleNavbar(collapseID) {
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
